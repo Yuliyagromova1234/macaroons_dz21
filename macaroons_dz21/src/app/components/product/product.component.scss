@@ -1,0 +1,53 @@
+.macaroons-item {
+  width: 261px;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  padding: 109px 21px 27px 11px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.macaroons-item-img {
+  position: absolute;
+  top: -60px;
+  right: 36px;
+  transition: all 0.8s ease;
+}
+
+.macaroons-item-title {
+  text-align: center;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 26px;
+}
+
+.macaroons-item:hover .macaroons-item-img {
+  transform: scale(1.1);
+}
+
+.macaroons-item-order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.macaroons-item-desc {
+  font-size: 15px;
+  font-family: Gilroy, sans-serif;
+  color: rgb(255, 255, 255);
+  margin-bottom: 16px;
+}
+.macaroons-item-desc:last-child{
+  margin-bottom: 0;
+}
+
+.macaroons-item-btn {
+  width: 130px;
+  padding: 19px 19px 20px 19px;
+}
+
+@media screen and (max-width: 643px) {
+  .macaroons-item-btn {
+    padding: 17px 29px
+  }
+}

@@ -1,0 +1,16 @@
+<div class="macaroons-item">
+  <img src="assets/img/{{product.img}}" class="macaroons-item-img" alt="{{product.name}}">
+  <div class="macaroons-item-title">{{product.name}}</div>
+  <div class="macaroons-item-order">
+    <div class="macaroons-item-text">
+      <div class="macaroons-item-desc">{{product.count}}</div>
+      <div class="macaroons-item-desc">{{product.price | currency: 'RUB':'руб. '}}</div>
+    </div>
+    <div class="macaroons-item-action">
+      <button appButton
+              [backgroundDefault]="'linear-gradient(360deg, rgb(113 8 30) 0%, rgb(215, 72, 92) 100%)'"
+              [backgroundHover]="'0 5px 9px 1px rgba(130, 19, 40, 0.5)'"
+        class="btn macaroons-item-btn" (click)="addProductToCart()">Заказать</button>
+    </div>
+  </div>
+</div>
